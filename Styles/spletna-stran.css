@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 768px) {
     .uvod, .ponuba, .vsebina, .naslov, .prozor {
-        width: 100%;
+        width: 150px;
     }
 }
 
