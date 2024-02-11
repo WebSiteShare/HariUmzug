@@ -6,12 +6,6 @@
     height: 3000px;
 }
 
-@media screen and (max-width: 768px) {
-    .uvod, .ponuba, .vsebina, .naslov, .prozor {
-        width: 150px;
-    }
-}
-
 .uvod {
     padding-bottom: 180px;
 }
