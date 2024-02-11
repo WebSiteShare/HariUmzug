@@ -1,6 +1,6 @@
 ﻿body {
     font-family: roboto;
-    background-image: url(Uvod/ozadje.jpg);
+    background-image: src="Uvod/ozadje.jpg";
     background-attachment: fixed;
     background-size: cover;
     height: 3000px;
