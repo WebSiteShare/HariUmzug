@@ -26,13 +26,13 @@
 
 @media only screen and (max-width: 780px) {
     .naslov {
-        height: 0;
+        height: 5%;
     }
 }
 
 @media only screen and (max-width: 780px) {
     .kontakt-prelaz {
-        font-size: 12px;
+        font-size: 50%;
     }
 }
 
