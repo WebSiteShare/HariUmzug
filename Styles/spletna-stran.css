@@ -24,6 +24,12 @@
     }
 }
 
+@media only screen and (max-width: 780px) {
+    .naslov {
+        height: 0;
+    }
+}
+
 .uvod {
     padding-bottom: 180px;
 }
