@@ -1,6 +1,6 @@
 ﻿body {
     font-family: roboto;
-    background-image: url("ozadje.jpg");
+    background-image: url(ozadje.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 3000px;
@@ -18,12 +18,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .vsebina {
-        margin-left: 8%;
-    }
-}
-
 .uvod {
     padding-bottom: 180px;
 }
@@ -31,7 +25,7 @@
 .naslov {
     display: flex;
     justify-content: center;
-    background-image: url("Uvod/ozadje.jpg");
+    background-image: url(ozadje.jpg);
     background-size: cover;
     position: fixed;
     top: 0;
@@ -43,12 +37,6 @@
     box-shadow: 0px 10px 25px black;
     transition: opacity 0.5s, box-shadow 0.5s, height 0.25s;
     z-index: 5;
-}
-
-@media screen and (max-width: 1500px) {
-    .naslov {
-        height: 34%;
-    }
 }
 
 .kontakt {
