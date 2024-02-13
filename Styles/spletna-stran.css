@@ -1,6 +1,6 @@
 ﻿body {
     font-family: roboto;
-    background-image: url('ozadje.jpg');
+    background-image: url("ozadje.jpg");
     background-attachment: fixed;
     background-size: cover;
     height: 3000px;
@@ -31,7 +31,7 @@
 .naslov {
     display: flex;
     justify-content: center;
-    background-image: url('ozadje.jpg');
+    background-image: url("ozadje.jpg");
     background-size: cover;
     position: fixed;
     top: 0;
