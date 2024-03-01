@@ -1,0 +1,275 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(ozadje.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ulaz-prelaz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lightgray;
+    color: white;
+    opacity: 0;
+    font-size: 80px;
+    animation: Willkommen 2s ease-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes Willkommen {
+    from {opacity: 1; z-index: 1}
+    to {opacity: 0; z-index: -1}
+}
+
+.navigacija {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 2% 0;
+    margin: auto;
+    border-radius: 5px;
+}
+    .navigacija img {
+        opacity: 0.5;
+        transition: 0.5s;
+        width: 25%;
+        margin-right: 2%;
+    }
+
+    .navigacija img:hover {
+        box-shadow: 0 20px 20px black;
+        opacity: 0.8;
+    }
+
+    .navigacija ul {
+        display: flex;
+        float: left;
+    }
+
+    .navigacija ul li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .popravilo::before {
+        left: -3% !important;
+    }
+
+    .navigacija ul li::after {
+        content: "";
+        border-radius: 2px;
+        height: 5px;
+        width: 0%;
+        background-color: darkslateblue;
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        bottom: -10%;
+        transition: 0.25s;
+    }
+
+    .navigacija ul li:hover::after {
+        width: 100%;
+    }
+
+    .navigacija ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: lightgrey;
+        font-weight: bold;
+        font-size: 150%;
+        transition: 0.25s;
+    }
+
+        .navigacija ul li::before {
+            content: "";
+            background-color: darkslateblue;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            left: -5%;
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+
+        .navigacija ul li:hover::before {
+            display: none;
+        }
+
+        .navigacija ul li a:hover {
+            text-shadow: -15px -15px 30px darkslateblue;
+        }
+
+        /*UBER UNS, WIR BIETEN I KONTAKT = DUGME ZA POCETNU STRANICU*/
+.domov a{
+    background-color: rgba(45, 24, 81, 0.5);
+    color: lightgray;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+    padding: 1%;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .domov a:hover {
+        box-shadow: 0 0 50px black;
+        background-color: rgba(45, 24, 81, 0.6);
+    }
+
+    /*UBER UNS*/
+
+.uberuns-besedilo h1{
+    background-color: rgba(77, 77, 77, 0.7);
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    padding: 10px 0;
+}
+
+.besedilo {
+    color: lightgray;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pod-besedilo {
+    background-color: rgba(77, 77, 77, 0.7);
+    display: flex;
+    justify-content: space-around;
+    color: lightgray;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+    .pod-besedilo div div h1 {
+        color: darkslateblue;
+    }
+
+    /*WIR BIETEN*/
+
+.pod-besedilo2 {
+    background-color: rgba(77, 77, 77, 0.7);
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 10px 0;
+}
+
+.fotografije {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+    width: 100%;
+    margin-bottom: 150px;
+    padding: 50px;
+}
+
+.slika {
+    background-color: rgba(77, 77, 77, 0.7);
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.slika:hover {
+    box-shadow: 0 0 20px darkslateblue;
+}
+
+.slika img {
+    display: flex;
+    width: 450px;
+    height: 300px;
+    border: 2px solid darkslateblue;
+    border-radius: 10px;
+}
+
+.tekst {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.tekst h1 {
+    margin-bottom: 15px;
+}
+
+.tekst span {
+    background-color: lightgray;
+    color: darkslateblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*KONTAKT*/
+
+.kontakt-podatki h1 {
+    background-color: rgba(77, 77, 77, 0.7);
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    padding: 10px 0;
+}
+
+.okno {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.kontakti {
+    background-color: rgba(77, 77, 77, 0.7);
+    border-radius: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 100px;
+}
+
+.prozoric {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+.ikona {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.prozoric img {
+    width: 100%;
+}
